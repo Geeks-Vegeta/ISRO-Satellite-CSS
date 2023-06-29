@@ -111,3 +111,45 @@ body {
     height: 7rem;
     cursor: pointer;
 }
+
+.writing-board{
+    margin:1rem;
+    width: 20rem;
+    display: none;
+    height: 10rem;
+    border: 2px solid red;
+    padding: 1rem;
+    border-radius: 22px;
+    background-color: #000000de;
+}
+
+
+.heading-board{
+    text-align: center;
+    font-size: larger;
+    color: white;
+}
+.starting-board{
+    display: flex;
+    justify-content: space-between;
+}
+
+.launch{
+    width: 10rem;
+    height: 3rem;
+    padding: 1rem;
+    margin: 1rem;
+    outline: none;
+    cursor: pointer;
+    border: none;
+    border-radius: 12px;
+    font-weight: 800;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: #02263a;
+    color: white;
+    &:hover{
+        background-color: rgb(53, 80, 199);
+        transition: 1s ease-in-out;
+    }
+}
+
