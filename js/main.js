@@ -47,7 +47,7 @@ const LaunchingRocket=()=>{
       let img = document.createElement("img");
       img.setAttribute("id","rocket");
       img.setAttribute("class", "gslv");
-      img.src="../images/gslv.png";
+      img.src="./images/gslv.png";
       gslv.appendChild(img)
 
       autoTyping("hello shreyas","write", 100);
