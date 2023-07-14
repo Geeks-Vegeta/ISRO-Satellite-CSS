@@ -51,29 +51,43 @@ const LaunchingRocket=()=>{
       img.setAttribute("class", "gslv");
       img.src="./images/gslv.png";
       gslv.appendChild(img)
-      autoTyping("gslv satellite has launched from india","write", 100);
+      autoTyping("gslv satellite has launched from india ..","write", 100);
 
-    
   }, 11000);
 
+  setTimeout(()=>{
+    autoTyping("gslv rocket one ejected ..","write1", 100);
 
+  },20000)
+  setTimeout(()=>{
+    autoTyping("gslv rocket entered space ..","write2", 100);
+
+  },30000)
+
+  setTimeout(()=>{
+    document.getElementById("gslv").style.display="none";
+    autoTyping("gslv landed on moon successfully","write4", 100);
+    document.getElementById("pyro").style.display="block";
+    document.getElementById("indian_flag").style.display="block";
+
+  },40000)
 }
 
-// window.onload = function() {
+window.onload = function() {
 
 
-//     let gslv_button=document.getElementById("rocket");
-//     gslv_button.addEventListener("click",function(){
+    let gslv_button=document.getElementById("rocket");
+    gslv_button.addEventListener("click",function(){
 
-//         launchRocketCountDown();
+        launchRocketCountDown();
 
-//         setTimeout(() => {
-//             document.getElementById("writing-board").style.display='block';
-//             autoTyping("hello", 100);
-//         }, 11000);
+        setTimeout(() => {
+            document.getElementById("writing-board").style.display='block';
+            autoTyping("hello", 100);
+        }, 11000);
 
-//     })
-//   };
+    })
+  };
 
 
 const launchRocketCountDown=()=>{
