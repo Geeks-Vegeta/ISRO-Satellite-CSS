@@ -35,6 +35,8 @@ document.onreadystatechange = function () {
 
 
 const LaunchingRocket=()=>{
+  var audio = new Audio('../count.mp3');
+  audio.play();
   document.getElementById("lauch").disabled=true;
   document.getElementById("lauch").style.display="none";
 
@@ -49,8 +51,7 @@ const LaunchingRocket=()=>{
       img.setAttribute("class", "gslv");
       img.src="./images/gslv.png";
       gslv.appendChild(img)
-
-      autoTyping("hello shreyas","write", 100);
+      autoTyping("gslv satellite has launched from india","write", 100);
 
     
   }, 11000);

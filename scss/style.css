@@ -4,6 +4,174 @@
   box-sizing: border-box;
 }
 
+@keyframes sat1 {
+  from {
+    top: 60%;
+    left: 30%;
+  }
+  to {
+    top: 60%;
+    left: 65%;
+    scale: 0;
+  }
+}
+@keyframes sat2 {
+  from {
+    top: 70%;
+    left: 30%;
+  }
+  to {
+    top: 60%;
+    left: 25%;
+    scale: 0;
+  }
+}
+@keyframes sat11 {
+  from {
+    top: 90%;
+    left: 50%;
+  }
+  to {
+    top: 40%;
+    left: 45%;
+    scale: 0;
+  }
+}
+@keyframes sat13 {
+  from {
+    top: 70%;
+    left: 30%;
+  }
+  to {
+    top: 90%;
+    left: 45%;
+    scale: 0;
+  }
+}
+@keyframes sat8 {
+  from {
+    top: 90%;
+    left: 55%;
+    scale: 0;
+  }
+  to {
+    top: 50%;
+    left: 35%;
+    scale: 1;
+  }
+}
+@keyframes sat12 {
+  from {
+    top: 70%;
+    left: 70%;
+  }
+  to {
+    top: 90%;
+    left: 55%;
+    scale: 0;
+  }
+}
+@keyframes sat3 {
+  from {
+    top: 50%;
+    left: 40%;
+  }
+  to {
+    top: 90%;
+    left: 30%;
+    scale: 0;
+  }
+}
+@keyframes sat5 {
+  from {
+    top: 70%;
+    left: 75%;
+  }
+  to {
+    top: 80%;
+    left: 30%;
+    scale: 0;
+  }
+}
+@keyframes sat4 {
+  from {
+    top: 80%;
+    left: 75%;
+  }
+  to {
+    top: 80%;
+    left: 30%;
+    scale: 0;
+  }
+}
+@keyframes sat7 {
+  from {
+    top: 45%;
+    left: 45%;
+  }
+  to {
+    top: 90%;
+    left: 25%;
+    scale: 0;
+  }
+}
+@keyframes rocket-lauched {
+  from {
+    bottom: 50px;
+    left: 38.5rem;
+    scale: 0;
+  }
+  to {
+    bottom: 20rem;
+    left: 38.5rem;
+    scale: 1;
+  }
+}
+@keyframes sat6 {
+  from {
+    top: 70%;
+    left: 25%;
+  }
+  to {
+    top: 70%;
+    left: 60%;
+    scale: 0;
+  }
+}
+@keyframes sat9 {
+  from {
+    top: 54%;
+    left: 60%;
+  }
+  to {
+    top: 64%;
+    left: 49%;
+    scale: 0;
+  }
+}
+@keyframes sat10 {
+  from {
+    top: 90%;
+    left: 50%;
+    scale: 0;
+  }
+  to {
+    top: 50%;
+    left: 50%;
+    scale: 1;
+  }
+}
+@keyframes sat15 {
+  from {
+    top: 50%;
+    left: 60%;
+  }
+  to {
+    top: 50%;
+    left: 40%;
+    scale: 0;
+  }
+}
 @keyframes identifier {
   0% {
     top: 50%;
@@ -116,27 +284,132 @@ body {
   background: transparent;
   position: absolute;
   bottom: 50px;
-  left: 17.5rem;
-  width: 7rem;
-  height: 7rem;
+  left: 38.5rem;
+  width: 3rem;
+  height: 3rem;
   cursor: pointer;
+  animation: rocket-lauched 30s linear;
 }
 
 .writing-board {
   margin: 1rem;
   width: 20rem;
-  display: none;
   height: 10rem;
-  border: 2px solid red;
+  border: 2px solid rgba(255, 0, 0, 0.363);
   padding: 1rem;
   border-radius: 22px;
-  background-color: rgba(0, 0, 0, 0.8705882353);
+  background-color: rgba(0, 0, 0, 0.5058823529);
+}
+
+.sate {
+  width: 3rem;
+  height: 3rem;
+}
+
+.sat13 {
+  position: absolute;
+  top: 90%;
+  left: 25%;
+  animation: sat13 50s linear infinite both;
+}
+
+.sat11 {
+  width: 1rem;
+  height: 1rem;
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  animation: sat11 30s infinite both;
+}
+
+.sat1 {
+  position: absolute;
+  top: 60%;
+  left: 30%;
+  animation: sat1 10s alternate-reverse infinite both;
+}
+
+.sat2 {
+  position: absolute;
+  top: 70%;
+  left: 30%;
+  animation: sat2 20s alternate-reverse infinite;
+}
+
+.sat5 {
+  position: absolute;
+  top: 70%;
+  left: 75%;
+  animation: sat5 40s linear alternate-reverse infinite;
+}
+
+.sat4 {
+  position: absolute;
+  top: 80%;
+  left: 75%;
+  animation: sat4 10s linear alternate-reverse infinite;
+}
+
+.sat3 {
+  position: absolute;
+  top: 90%;
+  left: 30%;
+  animation: sat3 40s linear alternate-reverse infinite;
+}
+
+.sat12 {
+  position: absolute;
+  top: 90%;
+  left: 55%;
+  animation: sat12 50s alternate-reverse infinite;
+}
+
+.sat7 {
+  position: absolute;
+  top: 45%;
+  left: 45%;
+  animation: sat7 20s linear alternate-reverse infinite;
+}
+
+.sat6 {
+  position: absolute;
+  top: 70%;
+  left: 25%;
+  animation: sat6 40s linear alternate-reverse infinite;
+}
+
+.sat9 {
+  position: absolute;
+  top: 54%;
+  left: 60%;
+  animation: sat9 10s linear alternate-reverse infinite;
+}
+
+.sat10 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  animation: sat10 20s linear alternate-reverse infinite;
+}
+
+.sat15 {
+  position: absolute;
+  top: 50%;
+  left: 60%;
+  animation: sat15 10s linear alternate-reverse infinite;
+}
+
+.sat8 {
+  position: absolute;
+  top: 90%;
+  left: 55%;
+  animation: sat8 30s linear alternate-reverse infinite;
 }
 
 .heading-board {
   text-align: center;
   font-size: larger;
-  color: white;
+  color: rgb(105, 130, 255);
 }
 
 .starting-board {
